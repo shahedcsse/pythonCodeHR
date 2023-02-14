@@ -26,3 +26,12 @@ class Product:
     def updatePrice(self,newprice:float)->float:
         self.price=newprice 
         return self.price
+
+    def __lt__(self,other):
+        return self .price >other.price 
+
+    def __eq__(self,other):
+        return self .price == other.price     
+
+    def __ge__(self,other):
+        return self .price >=other.price     
